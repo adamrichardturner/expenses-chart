@@ -1,7 +1,7 @@
 import rawData from '../data.json'
 import Balance from '@/components/Balance/Balance'
 import StatementChart from '@/components/Chart/StatementChart'
-import { DailyAmount } from '@/components/types'
+import { DailyAmount } from '@/components/Chart/types'
 
 import { DM_Sans } from 'next/font/google'
 
@@ -12,7 +12,7 @@ export default function Home() {
     <main
       className={`container flex min-h-screen space-y-6 flex-col items-center justify-center w-full ${DMsans.className}`}
     >
-      <Balance statement={rawData as DailyAmount[]} />
+      <Balance />
       <StatementChart statement={rawData as DailyAmount[]} />
     </main>
   )

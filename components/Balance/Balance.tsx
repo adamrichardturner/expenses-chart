@@ -1,13 +1,8 @@
 import { FC } from 'react'
-import { DailyAmount } from '../types'
 import Image from 'next/image'
 import Logo from '../../images/logo.svg'
 
-type Props = {
-  statement: DailyAmount[]
-}
-
-const Balance: FC<Props> = ({ statement }) => {
+const Balance: FC = () => {
   return (
     <section className="w-full bg-primary-soft-red text-white flex flex-row items-center justify-between rounded-xl space-x-12 px-6 py-6">
       <div className="space-y-1">

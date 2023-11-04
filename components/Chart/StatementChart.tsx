@@ -22,16 +22,22 @@ type Props = {
 }
 
 const StatementChart: FC<Props> = ({ statement }) => {
+  // Returns the total spend for the week
   const spendingTotal = statement.reduce(
     (total, item) => total + item.amount,
     0
   )
+
+  // Returns an array of the chart labels (day)
   const labels = useMemo(() => statement.map((e) => e.day), [statement])
+  // Returns an array of the chart spending amounts (amount)
   const data = useMemo(() => statement.map((e) => e.amount), [statement])
+  // Variables to handle bar colours
   const barColor = 'hsl(10, 79%, 65%)'
   const barHovered = 'hsla(10, 79%, 65%, .8)'
   const activeBarHovered = 'hsla(186, 34%, 60%, .8)'
   const activeBarColor = 'hsl(186, 34%, 60%)'
+
   return (
     <section
       aria-label="Statement Chart"
