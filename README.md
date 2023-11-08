@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://expenses-chart-nu.vercel.app/](https://expenses-chart-nu.vercel.app/)
+- Live Site URL: [https://expenses.adamrichardturner.dev/](https://expenses.adamrichardturner.dev/)
 
 ### Built with
 
