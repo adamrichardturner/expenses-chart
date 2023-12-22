@@ -12,6 +12,7 @@ export default function Home() {
     <main
       className={`container flex min-h-screen space-y-6 flex-col items-center justify-center w-full ${DMsans.className}`}
     >
+      <h3>Staging!</h3>
       <Balance />
       <StatementChart statement={rawData as DailyAmount[]} />
     </main>
